@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Abeezee";
+}
+button:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    position: relative;
+    top: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 28px;
+    width: 80%;
+    
+}
+
+header h1{
+    font-size: 24px;
+    font-weight: 174;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+header nav a{
+    color: #000;
+    font-size: 20px;
+}
+
+/* hero section */
+
+main .hero{
+    padding: 100px 28px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+    height: 533px;
+}
+main .hero .left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+}
+main .hero .left h1{
+    font-size: 32px;
+    font-weight: 300;
+}
+main .hero .left h2{
+    font-size: 28px;
+}
+main .hero #dev-bg{
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+    width: 200px;
+}
+
+
+main .hero .right{
+    border: 1px solid;
+    border-radius: 50%;
+    max-width: 350px;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    background-color: #C4BABA;
+}
+main .hero .right img{
+    width: 300px;
+}
+
+/* about section */
+main .about{
+    padding: 100px 40px;
+    margin-inline: auto; 
+}
+
+main .about .section-heading,
+main .projects .section-heading,
+main .contact .section-heading{
+    font-size: 28px;
+    padding: 12px;
+    border-bottom: 4px solid;
+    width: fit-content;
+    margin-inline:auto;
+    margin-bottom: 30px;
+}
+
+main .about .description{
+    color: #4748A6;
+    width: 60%;
+    margin-inline: auto;
+}
+main .about .personal-info{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23px;
+
+}
+
+main .about .personal-info > img{
+    width: 40%px;
+}
+main .about .personal-info .right{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 14px;
+    width: 40%;
+    
+}
+main .about .personal-info .right > p{
+    padding: 10px 20px;
+    border-left: 4px solid #4748A6;
+    color: #4748A6;
+}
+main .about .personal-info .right .skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+    width: fit-content;
+    
+}
+
+main .about .personal-info .right .skills .skill {
+    width: 45%;
+    display: flex;
+    gap: 14px;
+    
+}
+/* projects section */
+main .projects{
+    padding: 100px 60px;
+}
+main .projects .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline: auto;
+    gap: 16px;
+}
+main .projects .items .item{
+    width: 30%;
+    position: relative;
+    height: 200px;
+    border-radius: 6px;
+    
+}
+
+main .projects .items .item button{
+    border-radius: 8px;
+    padding: 10px 12px;
+    border: 1px solid;
+}
+main .projects .items .item .inner{
+    border: 1px solid;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 72%;
+   background-color: #F0EEEE;
+
+}
+main .projects .items .item .inner p{
+    font-size: 13px;
+    text-align: center;
+    text-wrap: balance;
+}
+main .projects .items .item .inner h3{
+    font-weight: 500;
+    font-size: 18px;
+}
+main .projects .items .item img{
+    width: 100%;
+    height: 110px;
+}
+
+/* contact section */
+main .contact{
+    padding: 50px 7px;
+    position: relative;
+}
+
+main .contact .section-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin-inline: auto;
+    position: relative;
+}
+main .contact .section-container > img{
+    opacity: 50%;
+
+}
+main .contact .section-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+main .contact .section-container form span:nth-child(1),
+main .contact .section-container form span:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+main .contact .section-container form span:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+main .contact .section-container form span textarea{
+    padding: 16px;
+    background-color: #A6CBE3;
+    border: none;
+    border-radius: 8px;
+}
+main .contact .section-container form span input{
+    padding: 12px 18px;
+    margin-left: 8px;
+    width: 80%;
+    background-color: #A6CBE3;
+    border: none;
+    border-radius: 8px;
+    
+}
+main .contact .section-container form button{
+    width: 100px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main .contact .social-icons-bg{
+    position: relative;
+    height: 240px;
+}
+main .contact .social-icons-bg a:nth-child(1){
+    position: absolute;
+    left: 50px;
+    bottom: 300px;
+}
+main .contact .social-icons-bg a:nth-child(2){
+    position: absolute;
+    left: 5px;
+    bottom: 200px;
+}
+main .contact .social-icons-bg a:nth-child(3){
+    position: absolute;
+    left: 90px;
+    bottom: 220px;
+}
+main .contact .social-icons-bg a:nth-child(4){
+    position: absolute;
+    left: 160px;
+    bottom: 140px;
+}
+main .contact #developer-bg-3{
+    position: absolute;
+    width: 200px;
+    right: 20px;
+    bottom: 100px;
+}
+
+
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+footer img{
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+footer nav{
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #9696AF;
+    height: 210px;
+    border-radius: 40px 0 0 0;
+}
+footer nav a{
+    color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
